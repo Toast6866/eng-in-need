@@ -1,0 +1,16 @@
+{
+    "projects": [
+      {
+        "title": "Project 1",
+        "body": "This is the first project",
+        "name": "Seth Gledhill",
+        "id": "1"
+      },
+      {
+        "title": "Project 2",
+        "body": "This is the second project",
+        "name": "Elizabeth Trembley",
+        "id": "2"
+      }
+    ]
+  }
