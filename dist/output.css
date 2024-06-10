@@ -35,6 +35,23 @@
 7. Disable tap highlights on iOS
 */
 
+html,
+:host {
+  line-height: 1.5;
+  /* 1 */
+  /* 2 */
+  /* 3 */
+  tab-size: 4;
+  /* 3 */
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
+  font-variation-settings: normal;
+  /* 6 */
+  /* 7 */
+}
+
 /*
 1. Remove the margin in all browsers.
 2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
@@ -214,9 +231,15 @@ select {
 2. Remove default button styles.
 */
 
-button {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* Transparent tap highlight color for WebKit browsers */
-
+button,
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
+  /* 1 */
+  background-color: transparent;
+  /* 2 */
+  background-image: none;
+  /* 2 */
 }
 
 /*
@@ -256,6 +279,12 @@ Correct the cursor style of increment and decrement buttons in Safari.
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
 */
+
+[type='search'] {
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
 
 /*
 Remove the inner padding in Chrome and Safari on macOS.
@@ -383,6 +412,8 @@ iframe,
 embed,
 object {
   display: block;
+  /* 1 */
+  /* 2 */
 }
 
 /*

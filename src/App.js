@@ -1,16 +1,18 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Navbar';
 import Home from './Home';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Create from './Create';
-import ProjectDetails from './ProjectDetails'; // Ensure this path is correct
+import ProjectDetails from './ProjectDetails';
 import NotFound from './NotFound';
+import './tailwind.css'; // Import Tailwind CSS file
 
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="min-h-screen bg-yellow-100"> {/* Add min-h-screen for full height */}
         <Navbar />
-        <div className="content">
+        <div className="container mx-auto px-4 py-8"> {/* Add container for content padding */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/create" element={<Create />} />
