@@ -1,0 +1,13 @@
+
+> eng-in-need@0.1.0 npx
+> create-vite eng-in-need --template react eng-in-need
+
+
+Scaffolding project in C:\Users\sethp\Documents\Tuts\eng-in-need\eng-in-need...
+
+Done. Now run:
+
+  cd eng-in-need
+  npm install
+  npm run dev
+
