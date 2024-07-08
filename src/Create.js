@@ -11,7 +11,7 @@ const Create = () => {
     e.preventDefault();
     const project = { title, body, name };
 
-    fetch('http://localhost:8000/projects/', {
+    fetch('http://localhost:3000/projects/', {
       method: 'POST',
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(project)

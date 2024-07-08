@@ -3,11 +3,11 @@ import useFetch from "./useFetch";
 
 const ProjectDetails = () => {
   const { id } = useParams();
-  const { data: project, error, isPending } = useFetch('http://localhost:8000/projects/' + id);
+  const { data: project, error, isPending } = useFetch('http://localhost:3000/projects/' + id);
   const navigate = useNavigate();
 
   const handleClick = () => {
-    fetch('http://localhost:8000/projects/' + project.id, {
+    fetch('http://localhost:3000/projects/' + project.id, {
       method: 'DELETE'
     }).then(() => {
       navigate.push('/');

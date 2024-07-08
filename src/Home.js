@@ -3,7 +3,7 @@ import useFetch from './useFetch';
 import ProjectList from './ProjectList';
 
 const Home = () => {
-  const { error, isPending, data: projects } = useFetch('http://localhost:8000/projects');
+  const { error, isPending, data: projects } = useFetch('http://localhost:3000/projects');
 
   return (
     <div className="home">
